@@ -1,0 +1,28 @@
+# === CUDA INDEX (doit être la première ligne) ===
+--index-url https://download.pytorch.org/whl/cu121
+--extra-index-url https://pypi.org/simple
+
+# --- CORE DL & GPU (Optimisé RTX 4060) ---
+torch
+torchvision
+torchaudio
+
+# --- DATA SCIENCE ---
+numpy
+pandas
+scikit-learn
+xgboost       
+matplotlib
+seaborn
+
+# --- NLP & TRANSFORMERS ---
+transformers
+datasets
+setfit
+sentence-transformers
+accelerate
+einops          
+
+# --- UTILS ---
+ipykernel
+tqdm
