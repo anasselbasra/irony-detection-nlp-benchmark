@@ -1,28 +1,30 @@
-# === CUDA INDEX (doit être la première ligne) ===
---index-url https://download.pytorch.org/whl/cu121
---extra-index-url https://pypi.org/simple
+# === GPU CONFIGURATION ===
+# Forces pip to look for CUDA-optimized wheels first.
+# This ensures you get 'torch-cu121' (GPU) instead of 'torch' (CPU).
+--extra-index-url https://download.pytorch.org/whl/cu121
 
-# --- CORE DL & GPU (Optimisé RTX 4060) ---
+# --- CORE DL & GPU (RTX 4060 Optimized) ---
 torch
 torchvision
 torchaudio
+
+# --- NLP & TRANSFORMERS ---
+# Pinned to 4.46.3 to support legacy models (.bin) and avoid CVE errors.
+transformers==4.46.3
+datasets
+setfit
+sentence-transformers
+accelerate
+einops
 
 # --- DATA SCIENCE ---
 numpy
 pandas
 scikit-learn
-xgboost       
+xgboost
 matplotlib
 seaborn
 
-# --- NLP & TRANSFORMERS ---
-transformers
-datasets
-setfit
-sentence-transformers
-accelerate
-einops          
-
-# --- UTILS ---
+# --- UTILS & NOTEBOOK ---
 ipykernel
 tqdm
