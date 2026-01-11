@@ -205,3 +205,30 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+
+# --- Models (too large for Git) ---
+models/
+setfit_checkpoints_irony/
+*.safetensors
+*.pkl
+*.bin
+*.pt
+*.pth
+
+# --- Cache ---
+__pycache__/
+.ipynb_checkpoints/
+.cache/
+*.pyc
+
+# --- Data (optional) ---
+data/
+*.csv
+*.parquet
+
+# --- Logs ---
+logs/
+wandb/
+runs/
