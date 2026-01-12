@@ -20,6 +20,7 @@ A comprehensive benchmark comparing multiple approaches for irony detection on T
 
 This project benchmarks **8 different models** for binary irony detection (Irony vs Not Irony) on the TweetEval dataset. The goal is to evaluate the trade-off between **performance** (F1-Score) and **efficiency** (inference speed, model size, training time).
 
+Note: Dataset might reload due to VRAM clearance (preventing OOM).
 ### Approaches Compared
 
 | Category | Models |
