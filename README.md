@@ -117,12 +117,12 @@ Other models (SetFit, Jina embeddings, Qwen) use raw text.
 |-------|----------|------------|-----------|--------|----------------|------------|
 | **Cardiff RoBERTa-2021-124M (SOTA)** | **78.57%** | **75.07%** | 70% | 81% | 1.72s | 125M |
 | SetFit (MPNet) | 74.00% | 72.00% | 63% | 83% | 0.96s | 109M |
-| Qwen 2.5-7B (Few-Shot 10)* | 70.79% | 72.64%* | 58% | 98% | 2674s | 7,000M |
 | Cardiff RoBERTa-Base | 73.47% | 62.72% | 71% | 56% | 9.54s | 125M |
 | **XGBoost (Jina v3 256d)** | **71.43%** | **67.44%** | 62% | 75% | 0.03s | <1M |
 | XGBoost (Jina v3 768d) | 66.84% | 61.08% | 57% | 66% | 0.04s | <1M |
 | Random Forest (Jina v3 768d) | 65.82% | 59.15% | 56% | 62% | 0.02s | <1M |
 | Random Forest (Jina v3 256d) | 65.69% | 58.16% | 56% | 60% | 0.06s | <1M |
+| Qwen 2.5-7B (Few-Shot 10)* | 70.79% | 72.64%* | 58% | 98% | 2674s | 7,000M |
 
 > **\*Warning:** Qwen's F1 score is misleading. With 98% recall but only 58% precision, the model systematically over-predicts IRONY. This is bias, not performance.
 
